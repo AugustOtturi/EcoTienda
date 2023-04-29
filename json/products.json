@@ -1,0 +1,98 @@
+[
+    {
+        "nombre": "Jabón ecológico de lavanda",
+        "precio": 5.99,
+        "descripcion": "Jabón hecho con ingredientes naturales y sin químicos dañinos, con un aroma relajante a lavanda.",
+        "imagen": "https://cdn.shopify.com/s/files/1/0275/6064/0600/products/Jabon-Lavanda-2019-2_1200x1200.png?v=1613698675"
+    },
+    {
+        "nombre": "Popotes de bambú",
+        "precio": 9.99,
+        "descripcion": "Set de 6 popotes reutilizables hechos de bambú orgánico, con un cepillo de limpieza incluido.",
+        "imagen": "https://cemmez.org.mx/wp-content/uploads/2021/09/venencias.png"
+    },
+    {
+        "nombre": "Bolsa reciclable de algodón",
+        "precio": 3.99,
+        "descripcion": "Bolsa de compras hecha de algodón orgánico y reciclado, resistente y durable para uso diario.",
+        "imagen": "https://rupekmx.com/wp-content/uploads/2020/07/maxresdefault.png"
+    },
+    {
+        "nombre": "Cepillo de dientes de bambú",
+        "precio": 4.99,
+        "descripcion": "Cepillo de dientes ecológico hecho de bambú biodegradable y cerdas de carbón activado, con un mango ergonómico.",
+        "imagen": "https://beskolab.com/wp-content/uploads/2019/12/CEPILLO-PARA-PAGINA-CON-CAJA.png"
+    },
+    {
+        "nombre": "Botella de agua",
+        "precio": 12.99,
+        "descripcion": "Botella de agua con diseño moderno y materiales resistentes, perfecta para llevar a cualquier lugar y reducir el uso de plástico.",
+        "imagen": "https://cdn.shopify.com/s/files/1/0017/0714/7328/products/Build-a-Bottle-350ml_1200x.png?v=1675857888"
+    },
+    {
+        "nombre": "Pañales de tela para bebé",
+        "precio": 24.99,
+        "descripcion": "Set de pañales de tela lavables y reutilizables, con diseño cómodo y ajustable para bebés de cualquier tamaño.",
+        "imagen": "https://mundogugu.com/wp-content/uploads/2020/11/Eucalyptus-Supreme-Product-Pics.png"
+    },
+    {
+        "nombre": "Cera para depilación",
+        "precio": 8.99,
+        "descripcion": "Cera hecha con ingredientes naturales y sin químicos dañinos, perfecta para depilación de cualquier zona del cuerpo.",
+        "imagen": "https://cdn.shopify.com/s/files/1/0665/5046/4765/products/4.png?v=1667765213&width=1445"
+    },
+    {
+        "nombre": "Toallas de cocina de algodón",
+        "precio": 6.99,
+        "descripcion": "Set de 4 toallas de cocina suaves y absorbentes, hechas de algodón orgánico y reciclado.",
+        "imagen": "https://cdn.shopify.com/s/files/1/0490/2702/3001/products/TMCMN_PRODUCTO1.png?v=1621986957&width=1100"
+    },
+    {
+        "nombre": "Café orgánico",
+        "precio": 10.99,
+        "descripcion": "Café de alta calidad, hecho con granos orgánicos y de comercio justo, con un sabor único y un aroma irresistible.",
+        "imagen": "https://www.biocafe.org.mx/img/gourmet.png"
+    },
+    {
+        "nombre": "Esponja de lufa natural",
+        "precio": 3.99,
+        "descripcion": "Esponja exfoliante hecha de lufa natural, perfecta para limpiar y exfoliar la piel de forma suave y efectiva.",
+        "imagen": "https://levert.cl/wp-content/uploads/2023/04/Asunto-7-450x450.png"
+    },
+    {
+        "nombre": "Repelente de insectos ",
+        "precio": 6.99,
+        "descripcion": "Repelente hecho con ingredientes naturales y sin químicos dañinos, para protegerte de mosquitos y otros insectos molestos.",
+        "imagen": "https://www.evergreencr.com/wp-content/uploads/2018/07/Repelente-Organico-Litro-2.png"
+    },
+    {
+        "nombre": "Pasta dental natural",
+        "precio": 7.99,
+        "descripcion": "Pasta dental hecha con ingredientes naturales y sin químicos dañinos, para una limpieza dental efectiva y segura.",
+        "imagen": "https://www.shelonabelmx.com/wp-content/uploads/2021/02/S501_Natural_Pasat_Dental-600x600-1.png"
+    },
+    {
+        "nombre": "Salsa picante orgánica",
+        "precio": 5.99,
+        "descripcion": "Salsa picante hecha con ingredientes orgánicos y sin conservantes, para darle sabor y picante a tus comidas favoritas.",
+        "imagen": "https://d2r9epyceweg5n.cloudfront.net/stores/002/140/109/products/salsa-picante-jalapenos-verdes1-1d10cd09e9583b43eb16609343316932-480-0.png"
+    },
+    {
+        "nombre": "Crema hidratante orgánica",
+        "precio": 12.99,
+        "descripcion": "Crema hidratante hecha con ingredientes orgánicos y sin químicos dañinos, para mantener tu piel suave y saludable.",
+        "imagen": "https://nbfmarket.com/wp-content/uploads/2021/02/Kit_Cremas.png"
+    },
+    {
+        "nombre": "Aceite de oliva orgánico",
+        "precio": 9.99,
+        "descripcion": "Aceite de oliva virgen extra hecho con aceitunas orgánicas, para darle sabor y aroma a tus comidas.",
+        "imagen": "https://carbonell.mx/themes/user/site/default/asset/img/familia/800X800_organico%28500%29.png"
+    },
+    {
+        "nombre": "Sábanas de algodón orgánico",
+        "precio": 39.99,
+        "descripcion": "Set de sábanas suaves y cómodas hechas de algodón orgánico y reciclado, para un descanso reparador y ecológico.",
+        "imagen": "https://makipuratc.com/wp-content/uploads/2021/11/sabanas_1-removebg-preview.png"
+    }
+]
