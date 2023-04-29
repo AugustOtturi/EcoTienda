@@ -22,3 +22,5 @@ const callApi = async () => {
 };
 
 callApi();
+
+const mostrarProductos = (array) => {};
