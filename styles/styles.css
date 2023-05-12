@@ -12,6 +12,10 @@
         rgba(112, 224, 0, 1) 11%,
         rgba(204, 255, 51, 1) 53%
     );
+
+    --fuenteUno: monospace;
+    --fuenteDos: 'Roboto', sans-serif;
+    --tamañoTextop1: 1.3rem;
 }
 
 body {
@@ -46,12 +50,12 @@ header nav ul li {
     list-style: none;
     margin-right: 1.5rem;
     font-size: 1.4rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--fuenteUno);
     color: black;
 }
 header nav ul li a {
     text-decoration: none;
-    color: white;
+    color: --col;
 }
 header nav ul li:hover {
     transform: scale(1.2);
@@ -184,3 +188,44 @@ footer ul li i:hover {
 }
 
 /* ESTILSO LUCIANA */
+
+#formu {
+    background-image: url('./imagenes/biodegradabili__scheda.jpg');
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    position: center;
+}
+#rec {
+    margin-left: 55%;
+}
+
+#field {
+    padding: 50px;
+    border-radius: 8px;
+    border-style: double;
+    border-width: 2px;
+    border-color: rgb(20, 69, 86);
+    margin: 30px;
+}
+
+#bot {
+    padding: 20px;
+
+    background-color: beige;
+}
+
+.formBox {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    margin: 10px 0;
+}
+.formBox label {
+    width: 75px;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    font-family: var(--fuenteUno);
+}
+.formBox input {
+    padding: 0.5rem 2rem;
+}
