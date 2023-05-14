@@ -7,15 +7,19 @@
 /* !VARIANTES */
 
 :root {
-    --backgroundH_F: linear-gradient(
-        90deg,
-        rgba(112, 224, 0, 1) 11%,
-        rgba(204, 255, 51, 1) 53%
-    );
+    --fuenteParrafos: 'Roboto', sans-serif;
+    --fuenteTitulo: monospace;
+    --fuenteHyF: sans;
 
-    --fuenteUno: monospace;
-    --fuenteDos: 'Roboto', sans-serif;
-    --tamañoTextop1: 1.3rem;
+    --tamañoTitulo: 2rem;
+    --tamañoParrafo: 1.3rem;
+    --tamañoNombres: 1.4rem;
+
+    --color1: #e8fccf;
+    --color2: #96e072;
+    --color3: #3da35d;
+    --color4: #3e8914;
+    --color5: #134611;
 }
 
 body {
@@ -27,7 +31,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--backgroundH_F);
+    background: var(--color2);
     padding: 1rem 0;
 }
 
@@ -38,6 +42,16 @@ header .navBrand a img {
 }
 header .navBrand a img:hover {
     animation: turnAround 2s ease;
+}
+header .navTitle {
+    margin-right: 50%;
+}
+header .navTitle p {
+    font-size: 2.3rem;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+    font-weight: bold;
 }
 
 header nav ul {

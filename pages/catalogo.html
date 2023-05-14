@@ -1,83 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Catalogo</title>
-        <link rel="stylesheet" href="../styles/styles.css" />
-        <script
-            src="https://kit.fontawesome.com/6da7673045.js"
-            crossorigin="anonymous"></script>
-    </head>
 
-    <body>
-        <header>
-            <div class="navBrand">
-                <a href="../index.html"
-                    ><img src="../assets/logo.png" alt="Logo de la empresa"
-                /></a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./catalogo.html">Catalogo</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalogo</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="https://kit.fontawesome.com/6da7673045.js" crossorigin="anonymous"></script>
+</head>
 
-        <!-- !MAIN -->
-
-        <main>
-            <section class="catalogo">
-                <h1 class="catalogoTitle">Catálogo de productos ecológicos</h1>
-                <p class="catalogoDescription">
-                    En nuestro catálogo de productos ecológicos encontrarás una
-                    amplia selección de artículos diseñados para reducir tu
-                    huella ecológica y promover un estilo de vida más
-                    sostenible. Desde productos de limpieza ecológicos hasta
-                    cepillos de dientes de bambú y botellas de agua
-                    reutilizables, tenemos todo lo que necesitas para vivir de
-                    manera más respetuosa con el medio ambiente.
-                </p>
-                <button id="btnNombre">Ordenar por nombre</button>
-                <button id="btnPrice">Ordenar por precio</button>
-                <input type="text" name="" id="productInput" />
-                <button id="btnSearchByName">Buscar</button>
-                <div id="spinner">Cargando lista ...</div>
-                <div class="gridCards" id="gridCards"></div>
-            </section>
-        </main>
-
-        <!-- ! Footer -->
-
-        <footer>
+<body>
+    <header>
+        <div class="navBrand">
+            <a href="../index.html"><img src="../assets/logo.png" alt="Logo de la empresa" /></a>
+        </div>
+        <nav>
             <ul>
-                <li>
-                    <a target="_blank" href="https://www.facebook.com/"
-                        ><i class="fa-brands fa-facebook"></i
-                    ></a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.facebook.com/"
-                        ><i class="fa-brands fa-twitter"></i
-                    ></a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.bbc.com/mundo"
-                        ><i class="fa-solid fa-newspaper"></i
-                    ></a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.youtube.com/"
-                        ><i class="fa-brands fa-youtube"></i
-                    ></a>
-                </li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./catalogo.html">Catalogo</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
             </ul>
-        </footer>
+        </nav>
+    </header>
 
-        <script src="../js/catalogo.js"></script>
-    </body>
+    <!-- !MAIN -->
+
+    <main>
+        <section class="catalogo">
+            <h1 class="catalogoTitle">Catálogo de productos ecológicos</h1>
+            <p class="catalogoDescription">
+                En nuestro catálogo de productos ecológicos encontrarás una
+                amplia selección de artículos diseñados para reducir tu
+                huella ecológica y promover un estilo de vida más
+                sostenible. Desde productos de limpieza ecológicos hasta
+                cepillos de dientes de bambú y botellas de agua
+                reutilizables, tenemos todo lo que necesitas para vivir de
+                manera más respetuosa con el medio ambiente.
+            </p>
+            <button id="btnNombre">Ordenar por nombre</button>
+            <button id="btnPrice">Ordenar por precio</button>
+            <input type="text" name="" id="productInput" />
+            <button id="btnSearchByName">Buscar</button>
+            <div id="spinner">Cargando lista ...</div>
+            <div class="gridCards" id="gridCards"></div>
+        </section>
+    </main>
+
+    <!-- ! Footer -->
+
+    <footer>
+        <ul>
+            <li>
+                <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.bbc.com/mundo"><i class="fa-solid fa-newspaper"></i></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="../js/catalogo.js"></script>
+</body>
+
 </html>
