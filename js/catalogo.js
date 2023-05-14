@@ -17,7 +17,7 @@ let spinner = document.querySelector('#spinner');
 setTimeout(() => {
     spinner.remove();
     mostrarProductos(PRODUCTOSLISTA);
-}, 1500);
+}, 2000);
 
 //!MOSTRAR PRODUCTOS
 const mostrarProductos = (array) => {
@@ -34,7 +34,7 @@ const mostrarProductos = (array) => {
                     <img class="productImg" src="${el.imagen}" alt="Producto">
                     <p class="productDescription">${el.descripcion}</p>
                     <span class="productPrice">$${el.precio}</span>
-                    <button class="productBtn">comprar</button>
+                    <button class="productBtn">Comprar</button>
                 </div>
     
         

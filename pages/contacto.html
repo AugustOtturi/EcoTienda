@@ -5,18 +5,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/favicon-32x32.png" type="image/x-icon">
     <title>Contacto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@600&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css" />
     <script src="https://kit.fontawesome.com/6da7673045.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <div class="navBrand">
-            <a href="../index.html"><img src="../assets/logo.png" alt="Logo de la empresa" /></a>
+        <div class="navPrincipal">
+            <div class="navBrand">
+                <a href="../index.html"><img src="../assets/logo.png" alt="Logo de la empresa" /></a>
+            </div>
+            <div class="navTitle">
+                <p>EcoTienda</p>
+            </div>
         </div>
         <nav>
             <ul>
@@ -30,70 +38,14 @@
 
     <!-- !MAIN -->
     <main>
-        <section>
-            <h1 class="titulo_prueba">Escribinos tus dudas o sugerencias</h1>
-            <h2 class="titulo_prueba">Queremos conocerte y saber qué pensás</h2>
+
+
+        <h1 class="titulo_prueba">Acá va el contacto</h1>
 
 
 
-            <div class="container" id="formu">
 
-                <form action="" id="subForm">
-                    <div class="formBox">
-                        <label for="firstname" class="etiq">Nombre</label>
-                        <input name="username" size="30" type="" id="firstname" placeholder="Ingrese nombre"
-                            minlength="3" maxlength="20">
-                    </div>
 
-                    <div class="formBox">
-                        <label for="surName" class="etiq">Apellido</label>
-                        <input name=surname" size="30" type="text" id="surname" placeholder="ingrese apellido" required>
-                    </div>
-                    <div class="formBox">
-                        <label for="birthday" class="etiq">Birthday</label>
-                        <input type="date" name="userBirthday" id="">
-                    </div>
-                    <div class="formBox">
-                        <label for="ciudad" class="etiq">Ciudad</label>
-                        <input name="userCity" type="text" size="30">
-                    </div>
-                    <div class="formBox">
-                        <label for="pais " class="etiq">Pais</label>
-                        <input type="" name="Userpais" id="pais">
-                    </div>
-                    <div class="formBox">
-                        <label name="UserPhone" for="telefono" class="etiq">Teléfono </label>
-                        <input type="number" name="" id="telefono" placeholder="Ingrese su telefono" pattern="">
-                        <select name="Tipo" id="selec">
-                            <option>linea</option>
-                            <option>celular</option>
-                        </select>
-                    </div>
-                    <div class="formBox"><label name="userEmail" for="email" class="etiq">Email</label>
-                        <input type="email" size="40" name="" id="email" placeholder="Ingrese su email" required
-                            pattern="^[a.z0-9]+(\.[_a-z0-9]+)*@[a-z0-9]+(\.[a-z0-9]+)*(\.[a-z]{2,15})$">
-                    </div>
-                    <div class="formBox">
-                        <label for="sexo" class="etiq">Sexo</label>
-                        <input type="radio" name="femenino" value="1">Femenino
-                        <input type="radio" name="masculino" value="2">Masculino
-                        <input type="radio" name="otro" value="3">otro
-
-                    </div>
-                    <div class="formBox">
-                        <label for="coments" class="etiq">Coments</label>
-                        <textarea maxlength="300" class="form-control" name="Coments" id="coments" rows="10"
-                            cols="30"></textarea>
-                    </div>
-
-                    <div class="formButtons">
-                        <button type="submit" id="bot">Enviar</button>
-                        <button type="reset" id="bot">Borrar</button>
-                    </div>
-
-                </form>
-            </div>
-        </section>
     </main>
 
     <!-- ! Footer -->
@@ -101,16 +53,20 @@
     <footer>
         <ul>
             <li>
-                <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a target="_blank" href="https://www.facebook.com/ecologiaverde/?locale=es_LA"><i
+                        class="fa-brands fa-facebook"></i></a>
             </li>
             <li>
-                <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank"
+                    href="https://twitter.com/ecologiaverde?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i
+                        class="fa-brands fa-twitter"></i></a>
             </li>
             <li>
-                <a target="_blank" href="https://www.bbc.com/mundo"><i class="fa-solid fa-newspaper"></i></a>
+                <a target="_blank" href="https://theecologist.org/"><i class="fa-solid fa-newspaper"></i></a>
             </li>
             <li>
-                <a target="_blank" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                <a target="_blank" href="https://www.youtube.com/@EcologiaVerde"><i
+                        class="fa-brands fa-youtube"></i></a>
             </li>
         </ul>
     </footer>
