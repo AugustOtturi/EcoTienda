@@ -169,3 +169,35 @@ footer ul li i:hover {
         transform: rotate(360deg);
     }
 }
+/*home*/
+.contenedor {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    padding: 10px;
+}
+
+.intro {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto;
+    background-color: beige;
+    padding: 10px;
+}
+
+.importante{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto;
+    background-color: beige;
+    padding: 10px;
+}
+
+.listado {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: auto;
+    background-color: beige;
+    padding: 10px;
+}
