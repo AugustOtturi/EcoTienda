@@ -23,9 +23,9 @@
 
     /* !TAMAÑOS */
 
-    --sizeHeader: 1.5rem;
-    --sizeParrafos: 1.3rem;
-    --sizeTitle: 3rem;
+    --sizeHeader: 1.4rem;
+    --sizeParrafos: 1.1rem;
+    --sizeTitle: 2.5rem;
 }
 
 body {
@@ -115,7 +115,7 @@ header nav ul li:hover {
 .catalogo .catalogoButtons button {
     border-radius: 5px;
     padding: 10px 20px;
-    font-size: 22px;
+    font-size: 18px;
     text-decoration: none;
     margin: 5px;
     color: #fff;
@@ -255,3 +255,52 @@ footer ul li i:hover {
         transform: rotate(360deg);
     }
 }
+
+
+
+
+/* !MEDIA QUERS */
+
+/* HEADER */
+
+@media (max-width: 910px) {
+   /* HEADER */
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    header .navPrincipal .navBrand a img{
+        margin: 0;
+    }
+    header nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        text-align: center;
+        flex-direction: column;
+    }
+    header nav ul li{
+        margin-top: 1rem;
+    }
+
+/* Catalogo */
+.catalogo .catalogoButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.catalogo .catalogoButtons button ,.catalogo .catalogoButtons input {
+    width: 70%;
+}
+.gridCards{
+    justify-content: center;
+}
+
+
+
+
+  }

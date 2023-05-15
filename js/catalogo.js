@@ -78,9 +78,13 @@ const searchByName = (array) => {
     const result = newArray.filter((el) => {
         return el.nombre.toLowerCase() === productToSearch.toLowerCase();
     });
-    console.log(result);
+    if(result.length === 0){
+        mostrarProductos(PRODUCTOSLISTA)
+    }
+    else{
 
-    mostrarProductos(result);
+        mostrarProductos(result);
+    }
 };
 
 //!EVENTOS
