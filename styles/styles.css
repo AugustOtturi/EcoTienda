@@ -437,3 +437,69 @@ footer ul li i:hover {
         transform: rotate(360deg);
     }
 }
+
+.nosotros p {
+    font-family: var(--fuenteParrafos);
+    font-size: var(--sizeParrafos);
+    line-height: 1.9;
+}
+
+/* Estilos para los títulos */
+
+.nosotros h2 {
+    font-family: var(--fuenteTitulos);
+    font-weight: 600;
+    font-size: var(--sizeTitle);
+}
+
+/* Estilos para el pie de página (footer) */
+
+.puestos-trabajo {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.puestos-trabajo .imagen-puesto {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.puestos-trabajo .imagen-puesto img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.puestos-trabajo .imagen-puesto img:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+    transition: 0.4s ease all;
+}
+
+.puestos-trabajo .imagen-puesto p {
+    margin-top: 14px;
+    color: rgb(75, 49, 49);
+    font-size: 18px;
+    text-align: center;
+    text-indent: 0;
+    margin-left: 0;
+}
+
+section.content h2,
+section.content p {
+    margin: 1rem;
+}
+
+.nosotros .content {
+    background-color: #f2f2f2; /* Color de fondo gris claro */
+    padding: 3rem 0;
+    margin: 1rem 0;
+}
+.nosotros .content h2 {
+    margin: 1rem;
+}
+.nosotros .content p {
+    margin: 0 2rem;
+    text-indent: 1.5rem;
+}
