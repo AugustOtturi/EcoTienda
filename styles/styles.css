@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* !VARIANTES */
+
+:root {
+    /* !fuentes */
+    --fuenteParrafos: 'Roboto', sans-serif;
+    --fuenteTitulos: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --fuenteHeaderyFooter: 'Lato', sans-serif;
+
+    /* !colores */
+
+    --color1: #c7f9cc;
+    --color2: #80ed99;
+    --color3: #57cc99;
+    --color4: #38a3a5;
+    --color5: #22577a;
+
+    /* !tamaños */
+
+    --sizeHeader: 1.4rem;
+    --sizeParrafos: 1.1rem;
+    --sizeTitle: 2.5rem;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+/* !HEADER  */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(87, 204, 153);
+    background: linear-gradient(
+        117deg,
+        rgba(87, 204, 153, 1) 34%,
+        rgba(199, 249, 204, 1) 86%
+    );
+    padding: 1rem 0;
+}
+header .navPrincipal {
+    display: flex;
+    align-items: center;
+}
+header .navPrincipal .navBrand a img {
+    width: 100px;
+    height: 100px;
+    margin-left: 2rem;
+}
+header .navPrincipal .navBrand a img:hover {
+    animation: turnAround 2s ease;
+}
+header .navPrincipal .navTitle p {
+    pointer-events: none;
+    font-size: 3rem;
+    font-style: italic;
+    font-family: var(--fuenteHeaderyFooter);
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4rem;
+}
+header nav ul li {
+    list-style: none;
+    margin-right: 1.5rem;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--fuenteHeaderyFooter);
+    font-size: var(--sizeHeader);
+}
+header nav ul li::after {
+    content: '';
+    position: relative;
+    display: block;
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+    background-color: var(--color5);
+}
+header nav ul li:hover::after {
+    transform: scaleX(1);
+    transition: 0.3s ease all;
+}
+
+/* !CATALOGO */
+
+.catalogo {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-size: var(--sizeTitle);
+    margin: 2rem 0 1.2rem 0;
+    font-family: var(--fuenteTitulos);
+}
+.subtitle {
+    text-align: center;
+    font-size: 1.9rem;
+    font-family: var(--fuenteTitulos);
+}
+
+.catalogo .catalogoDescription {
+    padding: 3rem 2rem;
+    font-size: var(--sizeParrafos);
+    font-family: var(--fuenteParrafos);
+    font-weight: bold;
+    text-align: justify;
+}
+.catalogo .catalogoButtons {
+    padding: 1rem 0;
+}
+.catalogo .catalogoButtons button {
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 5px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    background-color: var(--color5);
+    cursor: pointer;
+    font-family: var(--fuenteHeaderyFooter);
+}
+.catalogo .catalogoButtons input {
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    display: inline-block;
+}
+.gridCards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.gridCards .productCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 20rem;
+    height: 37rem;
+    box-shadow: 2px 2px 4px black;
+    cursor: pointer;
+    padding: 1rem 0;
+}
+.gridCards .productCard:hover {
+    box-shadow: 4px 4px 6px black;
+}
+
+.gridCards .productCard .productTitle {
+    text-align: center;
+    font-size: var(--sizeHeader);
+    font-family: var(--fuenteHeaderyFooter);
+}
+.gridCards .productCard .productImg {
+    width: 250px;
+    height: 250px;
+}
+.gridCards .productCard .productDescription {
+    font-family: var(--fuenteParrafos);
+    font-weight: 600;
+    text-align: justify;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    padding-bottom: 5px;
+}
+.gridCards .productCard .productPrice {
+    font-size: 2rem;
+    border-bottom: 1px solid;
+    font-family: var(--fuenteHeaderyFooter);
+}
+.gridCards .productCard .productBtn {
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 10px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    background-color: var(--color4);
+    cursor: pointer;
+    font-family: var(--fuenteHeaderyFooter);
+}
+.catalogo #spinner {
+    font-size: var(--sizeTitle);
+    font-family: var(--fuenteTitulos);
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+/* !FOOTER */
+
+footer {
+    margin-top: 4rem;
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    background: rgb(87, 204, 153);
+    background: linear-gradient(
+        117deg,
+        rgba(87, 204, 153, 1) 34%,
+        rgba(199, 249, 204, 1) 86%
+    );
+}
+footer ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+footer ul li {
+    margin-right: 1rem;
+}
+footer ul li a {
+    text-decoration: none;
+}
+footer ul li a i {
+    font-size: 2.3rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    color: white;
+}
+
+footer ul li i:hover {
+    color: var(--color5);
+    transition: 0.5 s all ease;
+}
+
+/* !RESPONSIVE */
+
+/*! HEADER */
+
+@media (max-width: 910px) {
+    /*! HEADER */
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header .navPrincipal .navBrand a img {
+        margin: 0;
+    }
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        text-align: center;
+        flex-direction: column;
+    }
+    header nav ul li {
+        margin-top: 1rem;
+    }
+
+    /*! Catalogo */
+    .catalogo .catalogoButtons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .catalogo .catalogoButtons button,
+    .catalogo .catalogoButtons input {
+        width: 70%;
+    }
+    .gridCards {
+        justify-content: center;
+    }
+}
+
+/* !Animaciones */
+@keyframes turnAround {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*NOSOTROS*/ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lucida+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+/* Colores */
+:root {
+    --color1: #c7f9cc;
+    --color2: #80ed99;
+    --color3: #57cc99;
+    --color4: #38a3a5;
+    --color5: #22577a;
+}
+
+/* Estilos para el encabezado (header) */
+header {
+    background-color: var(--color1);
+    padding: 20px;
+    color: var(--color5);
+    font-family: 'Lato', sans-serif;
+    font-size: var(--sizeHeader);
+    text-align: center;
+}
+
+/* Estilos para los párrafos */
+p {
+    font-family: var(--fuenteParrafos);
+    font-size: var(--sizeParrafos);
+    line-height: 1.5;
+}
+
+/* Estilos para los títulos */
+h1, h2 {
+    font-family: var(--fuenteTitulos);
+    font-weight: 600;
+    font-size: var(--sizeTitle);
+}
+
+/* Estilos para el pie de página (footer) */
+footer {
+    background-color: var(--color1);
+    padding: 10px;
+    color: var(--color5);
+    font-family: var(--fuenteHeaderyFooter);
+    text-align: center;
+}
+
+.puestos-trabajo {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.puestos-trabajo .imagen-puesto {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.puestos-trabajo .imagen-puesto img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.puestos-trabajo .imagen-puesto p {
+    margin-top: 10px;
+    color: gray;
+    font-size: 14px;
+    text-align: center;
+    text-indent: 0;
+    margin-left: 0;
+}
+
+section.content h2,
+section.content p {
+    margin: 1rem;
+}
+
+h1, h2, h3, h5, h6, p {
+    text-indent: 0.8cm;
+}
+
+h1, h2, h3, h5, h6 {
+    text-indent: 0.8cm;
+}
+
+h1, h2, h3, h5, h6, p {
+    margin-left: 0.8cm;
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 768px) {
+    h1, h2, h3, h4, h5, h6, p {
+        margin-left: 1cm;
+    }
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 480px) {
+    h1, h2, h3, h4, h5, h6, p {
+        margin-left: 0;
+    }
+}
+
+section .content {
+    background-color: #f2f2f2; /* Color de fondo gris claro */
+    padding: 10px; /* Espacio para separar el contenido del fondo */
+}
+
+section .content h2, section .content p{ 
+
+};
