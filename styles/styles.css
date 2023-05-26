@@ -170,18 +170,17 @@ footer ul li i:hover {
     }
 }
 
-/*home*/
+/*home*//*parte index*/
+
+.titulo_prueba{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .inframe{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-}
-.titulo_prueba{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
+    }
 
 .contenedor { 
     width: 90%;
@@ -230,10 +229,11 @@ footer ul li i:hover {
     
 }
 #contenedorCarrusel{ 
-    height: 400px;
-    overflow: hidden;
     justify-content: center;
     align-items: center;
+    height: 400px;
+    overflow: hidden;
+    
     
 }
 
@@ -273,5 +273,13 @@ a{
 img{
     height: 100%;
     width: 100%;
+   
 }
- 
+ /*fin parte index*/
+
+ section{
+    width: 600px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+ }
