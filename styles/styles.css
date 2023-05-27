@@ -25,9 +25,11 @@
 
     --sizeHeader: 1.4rem;
     --sizeParrafos: 1.1rem;
-    --sizeTitle: 2.5rem;
+    --sizeTitle: 3rem;
 }
-
+.eco {
+    color: var(--color3);
+}
 body {
     width: 100%;
     background-color: rgb(255, 255, 255);
@@ -254,9 +256,6 @@ footer ul li i:hover {
 }
 
 /* ESTILOS LUCIANA */
-* {
-    box-sizing: border-box;
-}
 
 .container {
     display: grid;
@@ -502,4 +501,125 @@ section.content p {
 .nosotros .content p {
     margin: 0 2rem;
     text-indent: 1.5rem;
+}
+
+.inframe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.contenedor {
+    width: 90%;
+    display: grid;
+    gap: 15px;
+    margin: 0% auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 10px;
+    grid-template-areas:
+        'intro listado'
+        'importante listado';
+}
+
+.intro {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto;
+    background-color: var(--color1);
+    padding: 5px;
+    text-align: center;
+    grid-area: intro;
+    grid-column: 2/4;
+}
+.intro p,
+.listado ul li,
+.importante p {
+    font-family: var(--fuenteParrafos);
+    line-height: 1.5rem;
+    font-size: var(--sizeParrafos);
+    text-align: justify;
+    margin: 0 2rem;
+}
+.intro h2,
+.listado h2,
+.importante h2 {
+    margin-top: 2rem;
+}
+
+.importante {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto;
+    background-color: var(--color1);
+    padding: 5px;
+    text-align: center;
+    grid-area: importante;
+    grid-column: 2/4;
+}
+
+.listado {
+    display: grid;
+    gap: 5px;
+    background-color: var(--color1);
+    padding: 100px;
+    grid-area: listado;
+    grid-column: 1/2;
+}
+.listado ul {
+    list-style-type: '✔';
+}
+.listado ul li {
+    margin: 1rem 0;
+}
+.listado ul li::marker {
+    font-size: 25px;
+}
+#contenedorCarrusel {
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    overflow: hidden;
+}
+
+.itemCarrusel {
+    height: 100%;
+    position: relative;
+}
+
+.tarjetaCarrusel {
+    background-color: bisque;
+    height: 100%;
+}
+
+.flechas {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.index .carrousel img {
+    height: 100%;
+    width: 100%;
+}
+
+.index .carrousel {
+    margin: 0 auto;
+    width: 600px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.index .carrousel a {
+    text-decoration: none;
+    font-size: 50px;
+    color: #fff;
 }
