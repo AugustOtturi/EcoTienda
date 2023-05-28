@@ -27,14 +27,12 @@
     --sizeParrafos: 1.1rem;
     --sizeTitle: 3rem;
 }
-.eco {
-    color: var(--color3);
-}
-body {
+
+/* body {
     width: 100%;
     background-color: rgb(255, 255, 255);
 }
-
+ */
 /* !HEADER  */
 
 header {
@@ -385,73 +383,17 @@ footer ul li i:hover {
     align-items: center;
 }
 
-/* !RESPONSIVE */
-
-/*! HEADER */
-
-@media (max-width: 910px) {
-    /*! HEADER */
-    header {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    header .navPrincipal .navBrand a img {
-        margin: 0;
-    }
-    header nav ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 0;
-        text-align: center;
-        flex-direction: column;
-    }
-    header nav ul li {
-        margin-top: 1rem;
-    }
-
-    /*! Catalogo */
-    .catalogo .catalogoButtons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column-reverse;
-    }
-    .catalogo .catalogoButtons button,
-    .catalogo .catalogoButtons input {
-        width: 70%;
-    }
-    .gridCards {
-        justify-content: center;
-    }
-}
-
-/* !Animaciones */
-@keyframes turnAround {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 .nosotros p {
     font-family: var(--fuenteParrafos);
     font-size: var(--sizeParrafos);
     line-height: 1.9;
 }
 
-/* Estilos para los títulos */
-
 .nosotros h2 {
     font-family: var(--fuenteTitulos);
     font-weight: 600;
     font-size: var(--sizeTitle);
 }
-
-/* Estilos para el pie de página (footer) */
 
 .puestos-trabajo {
     background-color: #ffffff;
@@ -522,6 +464,9 @@ section.content p {
     grid-template-areas:
         'intro listado'
         'importante listado';
+}
+.eco {
+    color: var(--color3);
 }
 
 .intro {
@@ -622,4 +567,100 @@ section.content p {
     text-decoration: none;
     font-size: 50px;
     color: #fff;
+}
+
+/* !RESPONSIVE */
+
+/*! HEADER */
+/* !Tablet */
+@media (max-width: 910px) {
+    /*! HEADER */
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header .navPrincipal .navBrand a img {
+        margin: 0;
+    }
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        text-align: center;
+        flex-direction: column;
+    }
+    header nav ul li {
+        margin-top: 1rem;
+    }
+
+    /*! Catalogo */
+    .catalogo .catalogoButtons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .catalogo .catalogoButtons button,
+    .catalogo .catalogoButtons input {
+        width: 70%;
+    }
+    .gridCards {
+        justify-content: center;
+    }
+    .wspBtn img {
+        display: none;
+    }
+}
+
+/* !telefonos */
+@media (max-width: 480px) {
+    .catalogo .gridCards .productCard {
+        width: 100%;
+    }
+}
+
+/* !Animaciones */
+@keyframes turnAround {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes wspBtn {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(15deg);
+    }
+    40% {
+        transform: rotate(-15deg);
+    }
+    60% {
+        transform: rotate(15deg);
+    }
+    80% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.wspBtn img {
+    height: 100px;
+    width: 100px;
+    display: block !important;
+    position: fixed;
+    z-index: 9999999;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 100px !important;
+    animation: wspBtn 2s ease infinite;
 }
